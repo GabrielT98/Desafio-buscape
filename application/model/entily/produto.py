@@ -22,17 +22,3 @@ class Produto():
         return self.__installments
     def get_installments_value(self):
         return self.__installmentValue
-
-"""
-    def toDict(self):
-        return {
-            "id": self.get_id(),
-            "name": self.get_name(),
-            "images": self.get_images(),
-            "price": {
-                "value":self.get_value,
-                "installments" : self.get_installments,
-                "installmentValue" : self.get_installments_value
-            }
-        }
-           """

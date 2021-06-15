@@ -16,9 +16,11 @@ def index():
 
 @app.route("/adicionar/<int:id>")
 def adicionar(id):
+
     for produto in produto_list:
         if produto.get_id() == int(id):#esse id vem como str e temos q transformar em int.
             carrinho_list.append(produto)
+
     return redirect(url_for('index'))
     
 
