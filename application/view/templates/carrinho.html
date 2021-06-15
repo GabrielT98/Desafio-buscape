@@ -18,22 +18,12 @@
       </nav>
       <h1>Produtos</h1>
       {%for produto in produto_list %}
-      <img  src="{{produto.get_images}}" />
+      <img  src="{{url_for('static', filename=produto.get_images())}}" />
       <p>{{produto.get_name()}}</p>
-      <p>{{produto.get_id()}}</p>
-      <p>{{produto.get_installments()}}x R$ {{produto.get_installments_value()}} ou {{produto.get_value() }} à vista. </p>
-      <a id="botao-adicionar" href="{{ url_for('adicionar', id=produto.get_id()) }}">Adicionar ao Carrinho</a>
-      <br>
+      <p>{{produto.get_id()}})</p>
+      <p>{{produto.get_installments()}}x R$ {{produto.get_installments_value()}} ou {{produto.get_value()}}</p>
+      <a>Adicionar ao Carrinho</a>
       {% endfor %}
-
-      <div>
-        <h1>Carrinho</h1>
-        {% for carrinho in carrinho_list%}
-          <p>{{carrinho.get_name()}}</p>
-        
-        {% endfor%}
-       
-      </div>
       <footer>
 
         
