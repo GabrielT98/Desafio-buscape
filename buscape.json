@@ -1,7 +1,5 @@
-{
-    "items": [
+[
         {
-            "product": {
                 "id": 2321312,
                 "name": "Smartphone Apple iPhone 7 128GB",
                 "images": [
@@ -15,10 +13,8 @@
                     "installments": 10,
                     "installmentValue": 389.90
                 }
-            }
         },
         {
-            "product": {
                 "id": 9971,
                 "name": "Smart TV Samsung Série 4 UN32J4300AG 32 polegadas LED Plana",
                 "images": [
@@ -32,10 +28,8 @@
                     "installments": 10,
                     "installmentValue": 134.11
                 }
-            }
         },
         {
-            "product": {
                 "id": 6717131,
                 "name": "Câmera Digital Canon EOS Rebel T5i 18.0 Megapixels",
                 "images": [
@@ -46,10 +40,8 @@
                     "installments": 10,
                     "installmentValue": 235.20
                 }
-            }
-        },
-        {
-            "product": {
+         },
+         {
                 "id": 6717131,
                 "name": "Lenovo IdeaPad 310 80UH0004BR Intel Core i7-6500U 2.5 GHz 8192 MB 1024 GB",
                 "images": [
@@ -61,6 +53,4 @@
                     "installmentValue": 259.90
                 }
             }
-        }
     ]
-}

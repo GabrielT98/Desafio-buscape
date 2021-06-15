@@ -1,16 +1,16 @@
 from typing import List
 
 
-class produto():
-    def __init__(self,id: int,name: str,images: List,value: float,installments: int,installmentValue: float):
+class Produto():
+    def __init__(self,id,name,imagens,value,installments,installmentValue):
         self.__id = id
         self.__name = name
-        self.__images = []
+        self.__images = imagens
         self.__value = value
         self.__installments = installments
         self.__installmentValue = installmentValue
 
-    def get_id(self):
+    def get_id(self) :
         return self.__id
     def get_name(self):
         return self.__name
@@ -23,9 +23,7 @@ class produto():
     def get_installments_value(self):
         return self.__installmentValue
 
-    def addImages(self,image):
-        self.__images.append(image)
-    
+"""
     def toDict(self):
         return {
             "id": self.get_id(),
@@ -37,7 +35,4 @@ class produto():
                 "installmentValue" : self.get_installments_value
             }
         }
-    
-    
-
-    
+           """
